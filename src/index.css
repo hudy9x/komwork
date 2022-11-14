@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-section-title {
+  @apply uppercase text-xs mx-4 mt-4 mb-2;
+}
+
+.menu-badge {
+  @apply w-7 h-7 flex items-center text-center text-xs justify-center text-gray-500;
+}
+
+.menu-item {
+  @apply hover:bg-gray-100 rounded-lg cursor-pointer;
+}
