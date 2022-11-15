@@ -1,4 +1,5 @@
 import { HiMagnifyingGlass, HiOutlineAdjustmentsVertical, HiOutlineEllipsisHorizontal, HiOutlineCube, HiOutlineUsers } from 'react-icons/hi2'
+import ProjectTaskList from "./ProjectTaskList"
 
 export default function ProjectArea() {
   const projectName = "⚽ Frappe Drive ⭐";
@@ -38,8 +39,6 @@ export default function ProjectArea() {
       </div>
 
     </div>
-    <div className="project-task-list">
-
-    </div>
+    <ProjectTaskList/>
   </div>
 }
