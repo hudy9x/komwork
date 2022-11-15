@@ -3,3 +3,6 @@
 @tailwind utilities;
 
 @import "./sidebar.css";
+@import "./project.css";
+
+
