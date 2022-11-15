@@ -1,0 +1,45 @@
+#sidebar {
+  @apply w-[250px] bg-gray-100 border-r border-gray-200;
+}
+
+.user-section {
+  @apply m-4 flex items-center gap-2 text-gray-600 cursor-pointer;
+}
+
+.menu-section-title {
+  @apply uppercase text-xs mx-4 mt-4 mb-2;
+}
+
+.menu-badge {
+  @apply w-7 h-7 flex items-center text-center text-xs justify-center text-gray-500;
+}
+
+.menu-item {
+  @apply hover:bg-white border border-transparent hover:border-gray-200 rounded-lg cursor-pointer;
+  @apply flex items-center justify-between mx-2 p-2 text-gray-500;
+}
+
+.menu-item-add{
+  @apply hover:bg-transparent hover:border-transparent;
+  @apply hover:text-gray-700;
+}
+
+.menu-item-icon {
+  @apply flex items-center justify-center;
+  width: 24px;
+}
+
+.menu-item-left {
+  @apply flex items-center gap-2;
+}
+
+
+.avatar {
+  @apply rounded-full inline-block h-8 w-8;
+}
+
+.avatar-sm {
+  @apply h-5 w-5;
+}
+
+
