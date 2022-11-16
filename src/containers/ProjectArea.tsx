@@ -5,7 +5,7 @@ export default function ProjectArea() {
   const projectName = "⚽ Frappe Drive ⭐";
   const menus = ["Overview", "Tasks", "Activity", "Discussion", "Attachments", "Settings"]
 
-  return <div id="project">
+  return <div id="project" className="w-full h-screen">
     <div className="project-header">
       <h2 className="heading">{projectName}</h2>
       <div className="project-menus">

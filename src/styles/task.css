@@ -1,0 +1,29 @@
+.task-detail {
+  @apply text-gray-500;
+}
+.task-header {
+  @apply flex items-center py-6;
+}
+
+.task-info{
+  @apply flex items-center justify-between;
+  @apply px-8 py-2 border-b border-gray-200;
+}
+
+.info-item {
+  @apply flex items-center gap-2 text-gray-500;
+  @apply text-xs;
+}
+
+.info-item svg{
+  @apply w-5 h-5;
+}
+
+.task-desc {
+  @apply mx-8 py-4 text-sm;
+  @apply border-b border-gray-200;
+}
+
+
+
+

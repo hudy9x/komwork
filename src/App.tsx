@@ -7,8 +7,8 @@ function App() {
   return (
     <div id="wrapper" className="flex h-screen">
       <Sidebar />
-      <main id="main-content" className="w-screen">
-        <ProjectArea/>
+      <main id="main-content" className="w-screen flex items-start">
+        <ProjectArea />
         <TaskDetail />
       </main>
     </div>
