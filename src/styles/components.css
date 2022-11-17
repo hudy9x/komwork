@@ -1,0 +1,17 @@
+.popover-container {
+  @apply bg-white text-gray-600 shadow-lg border border-gray-300  rounded-md;
+}
+
+.popover-header{
+  @apply px-4 py-3 border-b border-gray-300;
+  @apply flex items-center gap-2;
+}
+
+.popover-content {
+  
+}
+
+.popover-content .user-item {
+  @apply flex items-center gap-2 px-4 py-2 cursor-pointer;
+  @apply hover:bg-gray-100
+}
