@@ -11,9 +11,9 @@ export default function FormAttachment({ className }: Props) {
 
   return <div className={`${className} form-attachments`}>
 
-    <div className="form-upload-file border-b border-gray-200 mx-8 flex items-center gap-2 text-sm gap-2 py-1 cursor-pointer">
-      <HiOutlineArrowUpCircle />
-      <span>Upload or drag and drop</span>
+    <div className="form-upload-file border-b border-gray-200 mx-8 flex items-center gap-2 text-sm py-1 cursor-pointer">
+      <HiOutlineArrowUpCircle className="w-5 h-5"/>
+      <span className="text-xs">Upload or drag and drop</span>
     </div>
 
     <div className="form-file-list mx-8 text-sm">

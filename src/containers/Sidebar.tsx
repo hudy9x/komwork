@@ -4,10 +4,10 @@ const avatarUrl = "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?
 
 function Sidebar() {
   const menu1 = [
-    { icon: <HiOutlineInbox />, title: "My works", badge: "9" },
-    { icon: <HiOutlineCalendar />, title: "Today", badge: "2" },
-    { icon: <HiOutlineBell />, title: "Updates" },
-    { icon: <HiOutlineMagnifyingGlass />, title: "Search", },
+    { icon: <HiOutlineInbox className="w-5 h-5" />, title: "My works", badge: "9" },
+    { icon: <HiOutlineCalendar className="w-5 h-5" />, title: "Today", badge: "2" },
+    { icon: <HiOutlineBell className="w-5 h-5" />, title: "Updates" },
+    { icon: <HiOutlineMagnifyingGlass className="w-5 h-5" />, title: "Search", },
   ]
 
   const menu2 = [
@@ -27,7 +27,7 @@ function Sidebar() {
 
   return (
     <aside id="sidebar">
-      <section className="user-section ">
+      <section className="user-section">
         <img className="avatar" src={avatarUrl} alt="" />
         <h3>Melisa Pinto</h3>
         <HiChevronDown />
@@ -35,12 +35,12 @@ function Sidebar() {
 
       <nav className="menu">
         {menu1.map((item, index) => {
-          return <div className="menu-item " key={index}>
+          return <div className="menu-item" key={index}>
             <div className="menu-item-left">
               <div className="menu-item-icon">{item.icon}</div>
               <span className="menu-title">{item.title}</span>
             </div>
-            {item.badge ? <span className="menu-badge">{item.badge}</span> : null}
+            <span className="menu-badge">{item.badge ? item.badge : null}</span>
           </div>
         })}
 
@@ -50,12 +50,12 @@ function Sidebar() {
       <nav className="menu">
         <h2 className="menu-section-title">projects</h2>
         {menu2.map((item, index) => {
-          return <div className="menu-item flex items-center justify-between mx-2 p-2" key={index}>
-            <div className="menu-item-left flex items-center gap-2">
+          return <div className="menu-item" key={index}>
+            <div className="menu-item-left">
               <div className="menu-item-icon">{item.icon}</div>
               <span className="menu-title">{item.title}</span>
             </div>
-            {item.badge ? <span className="menu-badge">{item.badge}</span> : null}
+            <span className="menu-badge">{item.badge ? item.badge : null}</span>
           </div>
         })}
 
@@ -71,12 +71,12 @@ function Sidebar() {
       <nav className="menu">
         <h2 className="menu-section-title">Members</h2>
         {menu3.map((item, index) => {
-          return <div className="menu-item flex items-center justify-between mx-2 p-2" key={index}>
-            <div className="menu-item-left flex items-center gap-2">
+          return <div className="menu-item" key={index}>
+            <div className="menu-item-left">
               <div className="menu-item-icon">{item.icon}</div>
               <span className="menu-title">{item.title}</span>
             </div>
-            {item.badge ? <span className="menu-badge">{item.badge}</span> : null}
+            <span className="menu-badge">{item.badge ? item.badge : null}</span>
           </div>
         })}
 
