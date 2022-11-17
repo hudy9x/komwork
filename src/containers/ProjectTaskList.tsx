@@ -38,7 +38,7 @@ export default function ProjectTaskList() {
             })}
             <div className="task-line task-line-add">
               <div className="task-left">
-                <HiOutlinePlus className="pl-1 mr-1" />
+                <HiOutlinePlus className="w-4 h-4" />
                 <span>Add item</span>
               </div>
             </div>

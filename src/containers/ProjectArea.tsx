@@ -10,35 +10,36 @@ export default function ProjectArea() {
       <h2 className="heading">{projectName}</h2>
       <div className="project-menus">
         {menus.map((menu, index) => {
-          return <div className="project-menu-item" key={index}>{menu}</div>
+          const active = index === 2 ? "active" : ""
+          return <div className={`${active} project-menu-item`} key={index}>{menu}</div>
         })}
       </div>
     </div>
     <div className="project-actions">
       <div className="project-search">
-        <HiMagnifyingGlass />
+        <HiMagnifyingGlass className="w-5 h-5 text-gray-500" />
         <input type="text" placeholder="Search tasks" />
       </div>
 
       <div className="project-action-advanced">
         <button className="btn btn-sm">
-          <HiOutlineAdjustmentsVertical className="btn-icon" />
+          <HiOutlineAdjustmentsVertical className="btn-icon w-5 h-5" />
           <span>Filter</span>
         </button>
         <button className="btn btn-sm">
-          <HiOutlineCube className="btn-icon" />
+          <HiOutlineCube className="btn-icon w-5 h-5" />
           <span>Group by</span>
         </button>
         <button className="btn btn-sm">
-          <HiOutlineUsers className="btn-icon" />
+          <HiOutlineUsers className="btn-icon w-5 h-5" />
           <span>Assignees</span>
         </button>
         <button className="btn btn-sm">
-          <HiOutlineEllipsisHorizontal className="btn-icon" />
+          <HiOutlineEllipsisHorizontal className="btn-icon w-5 h-5" />
         </button>
       </div>
 
     </div>
-    <ProjectTaskList/>
+    <ProjectTaskList />
   </div>
 }

@@ -11,11 +11,25 @@
 }
 
 .project-menu-item{
-  @apply pb-1 hover:text-gray-700  border-transparent cursor-pointer; 
+  @apply pt-1 pb-1 hover:text-gray-700 text-sm border-transparent cursor-pointer; 
+}
+
+.project-menu-item.active {
+  position: relative;
+}
+
+.project-menu-item.active:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  background: red;
+  height: 1px;
 }
 
 .project-actions{
-  @apply px-8 py-2 border-b border-gray-200 flex items-center justify-between;
+  @apply px-8 py-1.5 border-b border-gray-200 flex items-center justify-between;
   @apply text-sm
 }
 
@@ -59,7 +73,7 @@
 
 /* Components */
 .btn {
-  @apply flex items-center gap-1 px-1.5 py-0.5 rounded-md text-gray-500;
+  @apply flex items-center gap-1 px-2 py-0.5 rounded-md text-gray-500;
   @apply hover:bg-gray-100;
 }
 
