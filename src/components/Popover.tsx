@@ -33,10 +33,14 @@ export const usePopover = () => {
 }
 
 // components -------------------
+function genUUID() {
+  const uuid = () => (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1)
+  return `${uuid()}-${uuid()}`
+}
 
 export default function Popover({ children }: IPopover) {
   const [visible, setVisible] = useState(false)
-  const id = useRef(Date.now());
+  const id = useRef(genUUID());
 
   useEffect(() => {
     const handler = (ev: MouseEvent) => {
@@ -62,7 +66,7 @@ export default function Popover({ children }: IPopover) {
 
 const PopoverButton = ({ children }: Props) => {
   const { setVisible } = usePopover()
-  return <div className="popover-btn" onClick={() => setVisible(true)}>
+  return <div className="popover-btn cursor-pointer" onClick={() => setVisible(true)}>
     {children}
   </div>
 }
