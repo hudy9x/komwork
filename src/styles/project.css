@@ -68,7 +68,7 @@
 }
 
 .task-line-icon {
-  @apply w-5 h-5 cursor-pointer ;
+  @apply w-5 h-5 cursor-pointer text-gray-400 ;
 }
 
 /* Components */
