@@ -13,5 +13,67 @@
 
 .popover-content .user-item {
   @apply flex items-center gap-2 px-4 py-2 cursor-pointer;
-  @apply hover:bg-gray-100
+  @apply hover:bg-gray-100 w-full;
 }
+
+
+.popover-content .calendar-content {
+  @apply w-[350px] p-0.5;
+}
+
+.calendar-dom {
+
+}
+
+.calendar-dow {
+
+}
+
+.calendar-day {
+  @apply px-4 py-1 text-center border-r border-b;
+  font-size: 0.75rem;
+}
+
+.calendar-day:last-child {
+  @apply border-r-transparent;
+}
+
+.calendar-date{
+  @apply text-center px-4 py-3 cursor-pointer text-gray-400 bg-gray-100;
+  @apply border-t border-r
+}
+
+.calendar-date:nth-child(-n + 7) {
+  @apply border-t-transparent;
+}
+
+.calendar-date:nth-child(7n - 7) {
+  @apply border-r-transparent;
+}
+
+.calendar-date.current-month{
+  @apply text-gray-800 bg-white;
+}
+
+.calendar-date.current-date {
+  @apply relative;
+}
+
+.calendar-date.current-date:before {
+  @apply absolute top-1 left-1 w-2 h-2 rounded-full bg-blue-600;
+  content: ''
+}
+
+.popover{
+  @apply relative;
+}
+
+.popover-panel {
+  @apply absolute hidden z-10;
+}
+
+.popover-panel.active{
+  @apply block;
+  /* @apply bg-white text-gray-600 shadow-lg border border-gray-300  rounded-md; */
+}
+
