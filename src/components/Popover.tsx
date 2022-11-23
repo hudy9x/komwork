@@ -71,11 +71,11 @@ const PopoverButton = ({ children }: Props) => {
   </div>
 }
 
-const PopoverPanel = ({ children }: IPopoverPanel) => {
+const PopoverPanel = ({ children, className = "" }: IPopoverPanel) => {
   const { visible } = usePopover();
   if (!visible) return null;
 
-  return <div className={`popover-panel ${visible ? 'active' : ''}`}>
+  return <div className={`popover-panel ${visible ? 'active' : ''} ${className}`}>
     {children}
   </div>
 }

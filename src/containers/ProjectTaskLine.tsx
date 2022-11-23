@@ -26,16 +26,26 @@ export default function ProjectTaskLine({ task }: Props) {
         <span>{task.title}</span>
       </div>
       <div className="task-right">
-        <Datepicker value="2022/11/18" />
-        {task.assignee.length ? (
-          <div>
-            {task.assignee.map((assignee) => {
-              return <UserSelect />;
-            })}
+        <div className="task-columns">
+          <div className="task-col">
+            <Datepicker value="2022/11/18" />
           </div>
-        ) : (
-          <HiOutlineUserCircle className="task-line-icon" />
-        )}
+          <div className="task-col">TODO</div>
+          <div className="task-col">
+            {task.assignee.length ? (
+              <div>
+                {task.assignee.map((assignee) => {
+                  return <UserSelect />;
+                })}
+              </div>
+            ) : (
+              <HiOutlineUserCircle className="task-line-icon" />
+            )}
+          </div>
+          <div className="task-col">
+            NORMAL
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -22,11 +22,11 @@ export default function UserSelect() {
       />
     </Popover.Button>
 
-    <Popover.Panel className="absolute translate-y-1 z-10">
+    <Popover.Panel className="right-0 translate-y-1 min-w-[290px]">
       <div className="popover-container">
         <div className="popover-header">
           <HiOutlineMagnifyingGlass className="w-4 h-4" />
-          <input type="text" placeholder="Search ..." />
+          <input type="text" placeholder="Search ..." className="outline-none border-transparent text-sm focus:outline-none focus:border-transparent focus:shadow-transparent focus:ring-transparent py-0 pl-0" />
         </div>
         <div className="popover-content">
           {users.map(user => {

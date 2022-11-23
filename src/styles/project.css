@@ -41,6 +41,10 @@
   @apply flex justify-end items-center gap-1;
 }
 
+.project-task-list {
+  @apply overflow-x-hidden overflow-y-auto;
+}
+
 /* Task */
 
 .task-view-group{
@@ -48,19 +52,41 @@
   @apply px-8 pt-4;
 }
 
+.task-group-section {
+  @apply relative;
+}
+
 .task-group-section .section-title{
   @apply font-bold mt-1;
+}
+
+.task-group-heading {
+  @apply flex items-end justify-between;
+  @apply sticky top-0 left-0 w-full;
+  @apply bg-white z-10 border-b border-gray-200 pb-1;
+}
+
+.task-columns {
+  @apply flex items-center gap-1 w-full;
+}
+
+.task-col, .task-heading-columns .task-col{
+  @apply text-sm text-center px-1.5 min-w-[70px];
+}
+
+.task-heading-columns .task-col {
+  @apply text-xs uppercase font-medium;
 }
 
 
 .task-line {
   @apply flex items-center gap-2 justify-between py-2;
   @apply text-sm;
-  @apply border-b border-gray-200;
+  @apply border-b border-gray-200 hover:bg-gray-50 cursor-pointer;
 }
 
 .task-line-add {
-  @apply border-transparent text-xs cursor-pointer;
+  @apply border-transparent text-xs cursor-pointer hover:bg-white;
 }
 
 .task-left, .task-right {
@@ -68,7 +94,7 @@
 }
 
 .task-line-icon {
-  @apply w-5 h-5 cursor-pointer text-gray-400 ;
+  @apply w-5 h-5 cursor-pointer text-gray-400 inline-flex;
 }
 
 /* Components */

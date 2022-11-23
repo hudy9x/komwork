@@ -58,7 +58,7 @@ export default function Datepicker({ value }: Props) {
       <HiOutlineCalendar className="task-line-icon" />
     </Popover.Button>
 
-    <Popover.Panel className="absolute translate-y-1 z-10">
+    <Popover.Panel className="right-0">
       <div className="popover-container">
         <div className="popover-content">
           <div className="calendar-header flex items-center justify-between px-4 py-2 border-b border-gray-200">
