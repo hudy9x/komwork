@@ -74,6 +74,11 @@
   @apply text-sm text-center px-1.5 min-w-[70px];
 }
 
+.task-columns.task-heading-columns .task-col {
+  font-size: 0.65rem;
+  @apply text-gray-600;
+}
+
 .task-heading-columns .task-col {
   @apply text-xs uppercase font-medium;
 }
